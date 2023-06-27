@@ -1,0 +1,172 @@
+/* 
+- Weights: 300, 400, 500
+
+- Font size: 18px || card titles
+
+- Blue: hsl(246, 80%, 60%)
+
+- Light red (work): hsl(15, 100%, 70%)
+- Soft blue (play): hsl(195, 74%, 62%)
+- Light red (study): hsl(348, 100%, 68%)
+- Lime green (exercise): hsl(145, 58%, 55%)
+- Violet (social): hsl(264, 64%, 52%)
+- Soft orange (self care): hsl(43, 84%, 65%)
+
+- Very dark blue: hsl(226, 43%, 10%)
+- Dark blue: hsl(235, 46%, 20%)
+- Desaturated blue: hsl(235, 45%, 61%)
+- Pale Blue: hsl(236, 100%, 87%)
+*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Overpass:wght@400;700&display=swap');
+
+body{
+    font-family: 'Rubik', sans-serif;
+    width: 375px;
+    height: 100%;
+    margin: auto;
+}
+
+.container{
+    color: white;
+    width: 300px;
+    height: 100%;
+    margin: auto;
+    background-color: hsl(226, 43%, 10%);
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* align-content: center; */
+    padding: 20px;
+    gap: 10px;
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color:hsl(246, 80%, 60%) ;
+}
+
+.image> img{
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.time> button{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.work> div{
+    background-color: hsl(235, 46%, 20%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.play> div{
+    background-color: hsl(235, 46%, 20%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.study> div{
+    background-color: hsl(235, 46%, 20%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.exercise> div{
+    background-color: hsl(235, 46%, 20%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social> div{
+    background-color: hsl(235, 46%, 20%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sc> div{
+    background-color: hsl(235, 46%, 20%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: hsl(15, 100%, 70%);
+}
+
+.title2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: hsl(195, 74%, 62%);
+}
+
+.title3{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color:hsl(348, 100%, 68%) ;
+}
+
+.title4{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: hsl(145, 58%, 55%);
+}
+
+.title5{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: hsl(264, 64%, 52%);
+}
+
+.title6{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: hsl(43, 84%, 65%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    text-decoration: none;
+    color: hsl(228, 45%, 44%); 
+}
