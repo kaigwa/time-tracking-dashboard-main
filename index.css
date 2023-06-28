@@ -84,11 +84,27 @@ body{
     justify-content: space-between;
 }
 
+/* .daily> span{
+    display: none;
+}
+
+.weekly> span{
+    display: none;
+}
+
+.monthly> span{
+    display: none;
+} */
+
 .play> div{
     background-color: hsl(235, 46%, 20%);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.active{
+    color: brown;
 }
 
 .study> div{
