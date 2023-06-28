@@ -11,152 +11,135 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<div class="container">
+  <div class="container">
 
-<div class="top">
-  <div class="user">
-    <div class="image">
-      <img src="./images/image-jeremy.png" alt="avatar">
+    <div class="top">
+      <div class="user">
+        <div class="candidate">
+          <img src="./images/image-jeremy.png" alt="avatar">
+        </div>
+
+        <div class="info">
+          <p>Report for</p>
+          <h4>Jeremy Robson</h4>
+        </div>
+      </div>
+
+      <div class="time">
+        <button id="daily">Daily</button>
+        <button id="weekly">Weekly</button>
+        <button id="monthly">Monthly</button>
+      </div>
     </div>
-
-    <div class="info">
-      <p>Report for</p>
-      <p>Jeremy Robson</p>
-    </div>
-  </div>
-
-  <div class="time">
-    <button id="daily">Daily</button>
-    <button id="weekly">Weekly</button>
-    <button id="monthly">Monthly</button>
-  </div>
-</div>
- 
-  <div class="card">
-
+  
     <div class="title">
-      <img src="./images/icon-work.svg" alt="">
+      <img class="image" src="./images/icon-work.svg" alt="">
+    
+      <div class="daily">
+
+        <div class="subject">
+          <p id="subject"></p>
+          <img class="icon-ellipsis" src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </div>
+        
+        <div class="output">
+          <p><span id="now"></span>hrs</p>
+          <p class="lw">Last Week - <span id="before"></span>hrs</p>
+        </div>
+
+      </div>
+ 
     </div>
 
-    <div class="work">
-
-      <div>
-        <p id="subject"></p>
-        <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
-      </div>
+    <div class="title2" >
+      <img class="image" src="./images/icon-play.svg" alt="play">
 
       <div class="daily">
-       <p><span id="now"></span>hrs</p>
-       <p>Last Week - <span id="before"></span>hrs</p>
-     </div>
 
-    </div>
-  </div>
+        <div class="subject">
+          <p id="subject"></p>
+          <img class="icon-ellipsis" src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </div>
 
-  <div class="card">
+        <div class="output">
+          <p><span id="now"></span>hrs</p>
+          <p class="lw">Last Week - <span id="before"></span>hrs</p>
+        </div>
 
-    <div class="title2">
-      <img src="./images/icon-play.svg" alt="play">
-    </div>
-
-    <div class="play">
-
-      <div>
-        <p id="subject"></p>
-        <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
       </div>
+    </div>
+    
+    <div class="title3">
+      <img class="image" src="./images/icon-study.svg" alt="study">
 
       <div class="daily">
-        <p><span id="now"></span>hrs</p>
-        <p>Last Week - <span id="before"></span>hrs</p>
+
+        <div class="subject">
+          <p id="subject"></p>
+          <img class="icon-ellipsis" src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </div>
+
+        <div class="output">
+          <p><span id="now"></span>hrs</p>
+          <p class="lw">Last Week -<span id="before"> </span>hrs </p>
+        </div>
+
       </div>
-
     </div>
-  </div>
-  
-<div class="card">
-
-  <div class="title3">
-    <img src="./images/icon-study.svg" alt="study">
-  </div>
-
-  <div class="study">
-
-    <div>
-      <p id="subject"></p>
-      <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
-    </div>
-
-    <div class="daily">
-      <p><span id="now"></span>hrs</p>
-      <p>Last Week -<span id="before"> </span>hrs </p>
-    </div>
-
-  </div>
- </div>
-  
-  <div class="card">
-
+    
     <div class="title4">
-      <img src="./images/icon-exercise.svg" alt="exercise">
-    </div>
+      <img class="image" src="./images/icon-exercise.svg" alt="exercise">
 
-    <div class="exercise">
-
-      <div>
-        <p id="subject"></p>
-        <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
-      </div>
-  
       <div class="daily">
-        <p><span id="now"></span>hrs</p>
-        <p>Last Week - <span id="before"></span>hr</p>
+
+        <div class="subject">
+          <p id="subject"></p>
+          <img class="icon-ellipsis" src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </div>
+    
+        <div class="output">
+          <p><span id="now"></span>hrs</p>
+          <p class="lw">Last Week - <span id="before"></span>hr</p>
+        </div>
+
       </div>
-
     </div>
-  </div>
-  
-  <div class="card">
-
+    
     <div class="title5">
-      <img src="./images/icon-social.svg" alt="social">
-    </div>
-
-    <div class="social">
-
-      <div>
-        <p id="subject"></p>
-        <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
-      </div>
+      <img class="image" src="./images/icon-social.svg" alt="social">
 
       <div class="daily">
-        <p><span id="now"></span>hrs</p>
-        <p>Last Week - <span id="before"> </span>hrs</p>
-      </div>
-  
-    </div>
-  </div>
-  
-  <div class="card">
 
+        <div class="subject">
+          <p id="subject"></p>
+          <img class="icon-ellipsis" src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </div>
+
+        <div class="output">
+          <p><span id="now"></span>hrs</p>
+          <p class="lw">Last Week - <span id="before"> </span>hrs</p>
+        </div>
+    
+      </div>
+    </div>
+    
     <div class="title6">
-      <img src="./images/icon-self-care.svg" alt="sc">
-    </div>
+      <img class="image" src="./images/icon-self-care.svg" alt="sc">
 
-    <div class="sc">
-
-      <div>
-        <p id="subject"></p>
-        <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
-      </div>
-  
       <div class="daily">
-        <p><span id="now"></span>hrs</p>
-        <p>Last Week - <span id="before"></span>hr</p>
-      </div>
 
+        <div class="subject">
+          <p id="subject"></p>
+          <img class="icon-ellipsis" src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </div>
+    
+        <div class="output">
+          <p><span id="now"></span>hrs</p>
+          <p class="lw">Last Week - <span id="before"></span>hr</p>
+        </div>
+
+      </div>
     </div>
-  </div>
 
   </div>
  
