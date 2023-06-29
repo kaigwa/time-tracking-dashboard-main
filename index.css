@@ -1,11 +1,10 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Overpass:wght@400;700&display=swap');
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Overpass:wght@400;700&display=swap');
 
 body{
     font-family: 'Rubik', sans-serif;
@@ -15,6 +14,10 @@ body{
     background-color: hsl(226, 43%, 10%);
 }
 
+body::-webkit-scrollbar {
+    display: none;
+  }
+
 .container{
     color: white;
     width: 300px;
@@ -22,8 +25,8 @@ body{
     margin: auto;
     display: flex;
     flex-direction: column;
-    padding: 20px 0 0;
-    gap: 10px;
+    padding: 20px;
+    gap: 20px;
 }
 
 .top{
@@ -33,28 +36,27 @@ body{
 
 .user{
     width: 100%;
-    height: 50px;
+    height: 80px;
     border-radius: 10px;
     display: flex; 
     flex-direction: row;
-    padding: 10px;
+    padding: 20px;
     gap: 10px;
     background-color:hsl(246, 80%, 60%) ;
 }
 
 .candidate> img{
     border: 1.6px solid white;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 
 .info{
-    /* margin-top: 6px; */
+    margin-top: 6px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* gap: 3px; */
+    gap: 3px;
 }
 
 .info> p{
@@ -66,7 +68,7 @@ body{
 }
 
 .time{
-    height: 30px;
+    height: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -131,27 +133,35 @@ button:hover{
 }
 
 .daily{
-    cursor: pointer;
     position: relative;
     top: -22px;
-    height: 60px;
+    /* display: flex;
+    flex-direction: column; */
+    /* gap: 10px; */
+    height: 90px;
     border-radius: 10px;
     padding: 20px;
     background-color: hsl(235, 46%, 20%);
 }
 
 .daily:hover{
-    background-color: hsl(235, 45%, 61%);
+    background-color:hsl(235, 45%, 61%) ;
 }
 
 .subject, .output{
     display: flex;
     flex-direction:row;
     justify-content: space-between;
+    /* margin: 10px 0; */
+}
+
+.output{
+    position: relative;
+    top:10px;
 }
 
 #subject{
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .icon-ellipsis{
@@ -161,7 +171,7 @@ button:hover{
 }
 
 #now{
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .lw{
@@ -184,9 +194,10 @@ button:hover{
 /* responsive design for desktop devices*/
 @media screen and (min-width: 768px) {
     body{
+        /* margin: auto; */
         width: 900px;
         height: 100%;
-        padding: 130px;
+        padding: 130px 0;
     }
 
     .container{
@@ -300,7 +311,7 @@ button:hover{
         flex-direction: column;
         align-items:flex-start;
         padding: 20px 0;
-        gap: 8px;
+        /* gap: 8px; */
     }
     
     #now, .hr{
