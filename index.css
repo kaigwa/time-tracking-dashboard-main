@@ -131,12 +131,17 @@ button:hover{
 }
 
 .daily{
+    cursor: pointer;
     position: relative;
     top: -22px;
     height: 60px;
     border-radius: 10px;
     padding: 20px;
     background-color: hsl(235, 46%, 20%);
+}
+
+.daily:hover{
+    background-color: hsl(235, 45%, 61%);
 }
 
 .subject, .output{
