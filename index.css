@@ -1,31 +1,11 @@
-/* 
-- Weights: 300, 400, 500
 
-- Font size: 18px || card titles
-
-- Blue: hsl(246, 80%, 60%)
-
-- Light red (work): hsl(15, 100%, 70%)
-- Soft blue (play): hsl(195, 74%, 62%)
-- Light red (study): hsl(348, 100%, 68%)
-- Lime green (exercise): hsl(145, 58%, 55%)
-- Violet (social): hsl(264, 64%, 52%)
-- Soft orange (self care): hsl(43, 84%, 65%)
-
-- Very dark blue: hsl(226, 43%, 10%)
-- Dark blue: hsl(235, 46%, 20%)
-- Desaturated blue: hsl(235, 45%, 61%)
-- Pale Blue: hsl(236, 100%, 87%)
-*/
-
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Overpass:wght@400;700&display=swap');
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Overpass:wght@400;700&display=swap');
 
 body{
     font-family: 'Rubik', sans-serif;
@@ -42,10 +22,7 @@ body{
     margin: auto;
     display: flex;
     flex-direction: column;
-    /* text-align: center; */
-    /* justify-content: center; */
-    /* align-content: center; */
-    padding: 20px;
+    padding: 20px 0 0;
     gap: 10px;
 }
 
@@ -56,21 +33,30 @@ body{
 
 .user{
     width: 100%;
-    height: 80px;
+    height: 50px;
     border-radius: 10px;
     display: flex; 
     flex-direction: row;
-    padding: 20px;
+    padding: 10px;
     gap: 10px;
     background-color:hsl(246, 80%, 60%) ;
 }
 
+.candidate> img{
+    border: 1.6px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
 .info{
-    margin-top: 6px;
+    /* margin-top: 6px; */
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    justify-content: center;
+    /* gap: 3px; */
 }
+
 .info> p{
     font-size: 10px;
 }
@@ -79,21 +65,12 @@ body{
     font-weight:300;
 }
 
-.candidate> img{
-    border: 1.6px solid white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
 .time{
-    height: 40px;
+    height: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-
-
 
 .time> button{
     background-color: transparent;
@@ -107,71 +84,12 @@ button:hover{
     color: white;
 }
 
-
-#subject{
-    font-size: 12px;
-}
-
-#now{
-    font-size: 16px;
-}
-
-.lw{
-    font-size: 10px;
-    margin-top: 5px;
-    color:hsl(236, 100%, 87%);
-}
-
-.play> div{
-    background-color: hsl(235, 46%, 20%);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.study> div{
-    background-color: hsl(235, 46%, 20%);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.exercise> div{
-    background-color: hsl(235, 46%, 20%);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.social> div{
-    background-color: hsl(235, 46%, 20%);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.sc> div{
-    background-color: hsl(235, 46%, 20%);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .title, .title2, .title3, .title4, .title5, .title6{
     overflow: hidden;
     border-radius: 10px 10px;
-    height: 78px;
     display: flex;
     flex-direction:column;
     background-color: hsl(15, 100%, 70%);
-}
-
-.image{
-    width: 40px;
-    height: 40px;
-    margin-left: 80%;
-    position: relative;
-    bottom: 6px;
 }
 
 .title2{
@@ -204,39 +122,189 @@ button:hover{
     background-color: hsl(43, 84%, 65%);
 }
 
+.image{
+    width: 40px;
+    height: 40px;
+    margin-left: 80%;
+    position: relative;
+    bottom: 6px;
+}
+
 .daily{
     position: relative;
     top: -22px;
-    height: 70px;
+    height: 60px;
     border-radius: 10px;
     padding: 20px;
     background-color: hsl(235, 46%, 20%);
 }
 
 .subject, .output{
-    /* gap: 6px; */
     display: flex;
     flex-direction:row;
     justify-content: space-between;
+}
+
+#subject{
+    font-size: 12px;
 }
 
 .icon-ellipsis{
     cursor: pointer;
     width: 10px;
     height: 3px;
-    /* border-radius: 50%; */
 }
 
-.icon-ellipsis:hover{
-    color: white;
+#now{
+    font-size: 16px;
+}
+
+.lw{
+    font-size: 10px;
+    margin-top: 5px;
+    color:hsl(236, 100%, 87%);
 }
 
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    color: hsl(228, 45%, 44%);
 }
 
 .attribution a { 
     text-decoration: none;
-    color: hsl(228, 45%, 44%); 
+    color: white; 
+}
+
+/* responsive design for desktop devices*/
+@media screen and (min-width: 768px) {
+    body{
+        width: 900px;
+        height: 100%;
+        padding: 130px;
+    }
+
+    .container{
+        margin: auto;
+        width: 760px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .top{
+        width: 170px;
+        height: 100%;
+    }
+
+    .user{
+        width: 100%;
+        height: 240px;
+        display: flex; 
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    
+    .info> h4{
+        font-size: 30px;
+        font-weight:300;
+    }
+    
+
+    .time{
+        display: flex;
+        flex-direction: column;
+        height: 113px;
+    }
+
+    #daily, #weekly, #monthly{
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .desktop{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desktop-up{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .up1, .up2, .up3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desktop-down{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .down1, .down2, .down3{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .title, .title2, .title3, .title4, .title5, .title6{
+        height: 60px;
+        width: 170px;
+    }
+
+    .image{
+        width: 45px;
+        height: 45px;
+        position: relative;
+        left: -30px;
+    }
+
+    .daily{
+        position: relative;
+        top: -34px;
+        height: 133px;
+        width: 170px;
+    }
+
+    .subject{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    #subject{
+        font-size: 12px;
+    }
+
+    .output{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        padding: 20px 0;
+        gap: 8px;
+    }
+    
+    #now, .hr{
+        font-size: 30px;
+    }
+    
+    .lw{
+        font-size: 10px;
+        margin-top: 5px;
+        color:hsl(236, 100%, 87%);
+    }
 }
