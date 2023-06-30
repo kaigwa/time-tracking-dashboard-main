@@ -133,6 +133,7 @@ button:hover{
 }
 
 .daily{
+    cursor: pointer;
     position: relative;
     top: -22px;
     /* display: flex;
@@ -234,7 +235,6 @@ button:hover{
         font-weight:300;
     }
     
-
     .time{
         display: flex;
         flex-direction: column;
